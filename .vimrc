@@ -25,6 +25,7 @@ Plug 'dense-analysis/ale'
 Plug 'ziglang/zig.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'morhetz/gruvbox'
+Plug 'https://github.com/preservim/tagbar.git'
 
 call plug#end()
 
@@ -65,3 +66,5 @@ function! s:show_documentation()
 endfunction
 
 let g:rustfmt_autosave = 1
+
+nmap <F8> :TagbarToggle<CR>
